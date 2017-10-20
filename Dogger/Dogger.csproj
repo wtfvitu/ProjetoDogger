@@ -210,6 +210,8 @@
     <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="package.json" />
+    <Content Include="manifest.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
