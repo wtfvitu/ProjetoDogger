@@ -84,7 +84,7 @@
                     </li>
                     -->
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Login</a>
+                        <a class="nav-link js-scroll-trigger" href="#"  data-toggle="modal" data-target="#modalLogin">Login</a>
                     </li>
                 </ul>
             </div>
@@ -162,7 +162,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/" alt="">
+                        <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Threads</h4>
@@ -176,7 +176,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/hulk.jpg" alt="">
+                        <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Explore</h4>
@@ -190,10 +190,9 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/Border_Collie" alt="">
+                        <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
-					<img class="img-fluid" src="img/portfolio/Border_Collie.jpg" alt="">
                         <h4>Finish</h4>
                         <p class="text-muted">Identity</p>
                     </div>
@@ -249,8 +248,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Comentários De Usuários</h2>
-                    <h3 class="section-subheading text-muted">Comentários sobre suas experiencias utilzando o site</h3>
+                    <h2 class="section-heading">Comentários</h2>
+                    <h3 class="section-subheading text-muted">Comentários sobre o site</h3>
                 </div>
             </div>
             <div class="row">
@@ -262,11 +261,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4> Agosto - 2017</h4>
-                                    <h4 class="subheading">Gabriel Henrique</h4>
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Tive uma experiência muito boa com o Dogger! Estava tendo dificuldades para encontrar um parceiro para o meu cão e isso foi resolvido rapidamente pelo Dogger. Recomendo fortemente este aplicativo para todos, facilitou muito a minha vida!</p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -276,11 +275,11 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Agosto - 2017</h4>
-                                    <h4 class="subheading">Igor Sampaio</h4>
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted"></p>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
@@ -448,14 +447,14 @@
     </section>
     -->
     <!-- Contact -->
-    <section id="contact">
+    <!--<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Login</h2>
                     <!--
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                    -->
+                    
                 </div>
             </div>
             <div class="row">
@@ -485,7 +484,7 @@
                                 <p class="help-block text-danger"></p>
                               </div>
                             </div>
-                            ------>
+                            
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
@@ -497,6 +496,7 @@
             </div>
         </div>
     </section>
+                                -->
 
     <!-- Footer -->
     <footer>
@@ -748,6 +748,38 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalLogin">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Login</h4>
+                </div>    
+            <div class="modal-body">
+                <input type="text" class="Slogar" id="testar" placeholder="Usuario" required /> <br />
+                <input type="password" class="Slogar"  placeholder="Senha" required /> <br />
+
+             <div  class="caixa-lembrar">    
+                <label>
+                    <input type="checkbox"> Lembrar
+                </label>
+              </div>      
+
+                    
+                    
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <a href="" ba
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
