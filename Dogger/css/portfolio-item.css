@@ -13,3 +13,9 @@ body {
         padding-top: 56px;
     }
 }
+
+#nomeProjetoProfile {
+    font-size: 2.0rem;
+    color: #fed136;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
