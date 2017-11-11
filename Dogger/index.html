@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" style="height: 100%">
+
 <head>
+
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,19 +36,26 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffcc00" />
+
+
     <title>Dogger</title>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
 </head>
+
 <body id="page-top" style="height: 100%">
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -82,8 +91,10 @@
             </div>
         </div>
     </nav>
+
     <!-- Header -->
     <header class="masthead" id="inicial" style="height: 100%">
+
         <!--<div class="container intro-text">
           <div class="intro-text">
 
@@ -96,6 +107,7 @@
 
         </div>-->
     </header>
+
     <!-- Services -->
     <section id="services">
         <div class="container">
@@ -133,6 +145,7 @@
             </div>
         </div>
     </section>
+
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
         <div class="container">
@@ -744,27 +757,35 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <input type="text" class="Slogar" id="testar" placeholder="Usuario" required /> <br />
-                    <input type="password" class="Slogar" placeholder="Senha" required /> <br />
-                    <div class="caixa-lembrar">
-                        <label>
-                            <input type="checkbox"> Lembrar
-                        </label>
+                    <div id="corpoLogin">
+                        <input type="text" class="Slogar" placeholder="Usuario" required /> <br />
+                        <input type="password" class="Slogar" placeholder="Senha" required /> <br />
+                        <button type="button" class="btn btn-primary">Login</button>
+                        <a href="#" class="link-simples">Esqueci a senha</a>
                     </div>
+                    <div id="corpoCadastro" style="display: none">
+                        <input type="email" class="SCadastrar" placeholder="E-Mail" required /> <br />
+                        <input type="password" class="SCadastrar" placeholder="Senha" required />
 
-
-
-
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Login</button>
-                    <a href="" ba
+                    <div id="rodapeLogin">
+                        <p class="cadastrar">
+                            Ainda não tem <a href="#" class="link-simples" onclick="return mostrarCadastro()">Cadastro?</a>
+                        </p>
+                    </div>
+                    <div id="rodapeCadastro" style="display: none">
+                        <p class="cadastrar">
+                            Voltar para o <a href="#" class="link-simples" onclick="return mostrarLogin()">Login</a>
+                        </p>
+                    </div>
                 </div>
+
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
@@ -772,12 +793,33 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <script type="text/javascript">
+        function mostrarLogin() {
+            $('#corpoLogin').show();
+            $('#corpoCadastro').hide();
+            $('#rodapeLogin').show();
+            $('#rodapeCadastro').hide();
+            return false;
+        }
+        function mostrarCadastro() {
+            $('#corpoLogin').hide();
+            $('#corpoCadastro').show();
+            $('#rodapeLogin').hide();
+            $('#rodapeCadastro').show();
+            return false;
+        }
+    </script>
 </body>
+
 </html>
