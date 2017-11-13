@@ -19,3 +19,12 @@ body {
     color: #fed136;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
+
+.bg-new{
+	background-color:#222222!important;
+}
+
+.my-row{
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+}
