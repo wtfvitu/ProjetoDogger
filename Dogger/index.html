@@ -71,13 +71,8 @@
                         <a class="nav-link js-scroll-trigger" href="#about">Linha do tempo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                      <a class="nav-link js-scroll-trigger" href="#team">Team</a>
                     </li>
-                    <!--
-                    <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" href="#team">Nathan</a>
-                    </li>
-                    -->
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
                     </li>
@@ -86,19 +81,7 @@
         </div>
     </nav>
     <!-- Header -->
-    <header class="masthead" id="inicial" style="height: 100%">
-        <!--<div class="container intro-text">
-          <div class="intro-text">
-
-
-            <div class="intro-lead-in" >Welcome To Our Studio!</div>
-            <div class="intro-heading">It's Nice To Meet You</div>
-             <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
-
-          </div>
-
-        </div>-->
-    </header>
+    <header class="masthead" id="inicial" style="height: 100%"></header>
     <!-- Services -->
     <section id="services">
         <div class="container">
@@ -329,6 +312,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+
                     <h2 class="section-heading">Our Amazing Team</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
@@ -450,6 +434,7 @@
         </div>
         </div>
     </section>
+
 
 
     <!-- Clients
@@ -798,7 +783,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login</h4>
+                    <h4 class="modal-title" id="tituloModal">Login</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -809,19 +794,23 @@
                         <a href="#" class="link-simples">Esqueci a senha</a>
                     </div>
                     <div id="corpoCadastro" style="display: none">
-                        <input type="email" class="SCadastrar" placeholder="E-Mail" required /> <br />
-                        <input type="password" class="SCadastrar" placeholder="Senha" required />
+
+                        <input type="email" class="Slogar" placeholder="E-Mail" required /> <br />
+                        <input type="text" class="Slogar" placeholder="Usuario" required />
+                        <input type="password" class="Slogar" placeholder="Senha" required />
+
+                        <button type="button" class="btn btn-primary">Cadastrar</button>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div id="rodapeLogin">
                         <p class="cadastrar">
-                            Ainda não tem <a href="#" class="link-simples" onclick="return mostrarCadastro()">Cadastro?</a>
+                            Ainda não tem <a href="#" class="link-cadastro" onclick="return mostrarCadastro()">Cadastro?</a>
                         </p>
                     </div>
                     <div id="rodapeCadastro" style="display: none">
                         <p class="cadastrar">
-                            Voltar para o <a href="#" class="link-simples" onclick="return mostrarLogin()">Login</a>
+                            Voltar para o <a href="#" class="link-cadastro" onclick="return mostrarLogin()">Login</a>
                         </p>
                     </div>
                 </div>
@@ -841,6 +830,7 @@
     <script src="js/agency.min.js"></script>
     <script type="text/javascript">
         function mostrarLogin() {
+            $('#tituloModal').text("LOGIN");
             $('#corpoLogin').show();
             $('#corpoCadastro').hide();
             $('#rodapeLogin').show();
@@ -848,6 +838,7 @@
             return false;
         }
         function mostrarCadastro() {
+            $('#tituloModal').text("CADASTRO");
             $('#corpoLogin').hide();
             $('#corpoCadastro').show();
             $('#rodapeLogin').hide();
